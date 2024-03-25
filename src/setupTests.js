@@ -4,3 +4,17 @@
 // learn more: https://github.com/testing-library/jest-dom
 import '@testing-library/jest-dom';
 import '@testing-library/jest-dom/extend-expect'
+
+import Enzyme from 'enzyme';
+import Adapter from '@cfaester/enzyme-adapter-react-18';
+
+import {createSerializer} from 'enzyme-to-json';
+
+import util from 'util';
+      Object.defineProperty(global, 'TextEncoder', {
+        value: util.TextEncoder,
+      });
+
+Enzyme.configure({ adapter: new Adapter() });
+
+expect.addSnapshotSerializer(createSerializer({mode: 'deep'}));

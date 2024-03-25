@@ -9,10 +9,14 @@ const AddCategory = ( {setCategories} ) => {
 
     const handleInputChange = ( ev ) => {
         setInputValue( ev.target.value )
+
+        // console.log('handleInputChange llamado');
     }
 
     const handleSubmit = (ev) => {
         ev.preventDefault()
+
+        // console.log('handleSubmit');
 
         // console.log(ev.target[0].value, '"Added"');
         if(inputValue.trim().length > 2){

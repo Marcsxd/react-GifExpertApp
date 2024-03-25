@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en el componente gifGridItem debe mostrar correctamente el componente 1`] = `
+<div
+  className="card animate__animated animate__fadeIn"
+>
+  <img
+    alt="Titulo random"
+    src="https://NoTeCreoHijo.localhost.jpg"
+  />
+  <p>
+     
+    Titulo random
+     
+  </p>
+</div>
+`;
